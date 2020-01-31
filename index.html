@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/application.css">
+
+    <title>Coronavírus</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prediction of coronavirus contamination</h1>
+      <p class="jumbotron">
+        This forecast was created based on predictive studies.<br />
+        The model used was <a href="https://cran.r-project.org/web/packages/forecast/forecast.pdf">auto-arima</a> from R.
+        
+      </p>
+      <canvas id="chart"></canvas>
+      <!-- button type="button" class="btn btn-primary btn-sm btn-block mt-3">Add one forecast day</button -->
+      <p class="jumbotron mt-3">
+        The database used was extracted from the site:<br />
+        <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html?fbclid=IwAR3rlGoEI5DR9WZbARAagnYpQwhGwS2couWXwDrnuxay7hrfTLvDM_8RzXc#/bda7594740fd40299423467b48e9ecf6">https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html?fbclid=IwAR3rlGoEI5DR9WZbARAagnYpQwhGwS2couWXwDrnuxay7hrfTLvDM_8RzXc#/bda7594740fd40299423467b48e9ecf6</a>
+      </p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>
