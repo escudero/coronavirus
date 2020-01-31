@@ -35,16 +35,10 @@ var drawLineChart = function(data) {
     var options = {
         type: 'line',
         data: data,
+        maintainAspectRatio: false,
         options: {
             fill: false,
             responsive: true,
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                mode: 'index',
-                intersect: false,
-            },
             hover: {
                 mode: 'nearest',
                 intersect: true
@@ -72,9 +66,31 @@ var drawLineChart = function(data) {
                     }
                 }]
             }
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: "Date",
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                },
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: "Total Confirmed",
+                }
+            }]
         }
     };
     
+    Chart.defaults.global.legend.display = false;
+    Chart.defaults.global.tooltips.mode = 'index';
+
     var myChart = new Chart(ctx, {
         type: 'line',
         data: data,

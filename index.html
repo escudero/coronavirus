@@ -3,7 +3,9 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -13,17 +15,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>Prediction of coronavirus contamination</h1>
+      <h1>Coronavirus prediction</h1>
       <p class="jumbotron">
         This forecast was created based on predictive studies.<br />
         The model used was <a href="https://cran.r-project.org/web/packages/forecast/forecast.pdf">auto-arima</a> from R.
         
       </p>
-      <canvas id="chart"></canvas>
+      <div class="chart-container">
+        <canvas id="chart"></canvas>
+      </div>
       <!-- button type="button" class="btn btn-primary btn-sm btn-block mt-3">Add one forecast day</button -->
       <p class="jumbotron mt-3">
-        The database used was extracted from the site:<br />
-        <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html?fbclid=IwAR3rlGoEI5DR9WZbARAagnYpQwhGwS2couWXwDrnuxay7hrfTLvDM_8RzXc#/bda7594740fd40299423467b48e9ecf6">https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html?fbclid=IwAR3rlGoEI5DR9WZbARAagnYpQwhGwS2couWXwDrnuxay7hrfTLvDM_8RzXc#/bda7594740fd40299423467b48e9ecf6</a>
+        The database used was extracted by <a href="https://docs.google.com/spreadsheets/d/1yZv9w9zRKwrGTaR-YzmAqMefw4wMlaXocejdxZaTs6w/htmlview?usp=sharing&sle=true">JHU CSSE</a>
       </p>
     </div>
 
