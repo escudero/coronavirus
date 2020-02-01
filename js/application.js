@@ -42,29 +42,6 @@ var drawLineChart = function(data) {
             hover: {
                 mode: 'nearest',
                 intersect: true
-            },
-            scales: {
-                xAxes: [{
-                    type: 'time',
-                    display: true,
-                    time: {
-                        tooltipFormat: 'll'
-                    },
-                    scaleLabel: {
-                        display: true,
-                        labelString: "Date",
-                    }
-                }],
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true,
-                    },
-                    display: true,
-                    scaleLabel: {
-                        display: true,
-                        labelString: "Total Confirmed",
-                    }
-                }]
             }
         },
         scales: {
@@ -77,7 +54,7 @@ var drawLineChart = function(data) {
             }],
             yAxes: [{
                 ticks: {
-                    beginAtZero: true,
+                    beginAtZero: true
                 },
                 display: true,
                 scaleLabel: {
